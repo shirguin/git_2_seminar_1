@@ -1,0 +1,808 @@
+@import "vars";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $backgroundColorSite;
+}
+
+.center {
+  margin-left: calc(50% - $widthSite / 2);
+  margin-right: calc(50% - $widthSite / 2);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 44px;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+
+    &__link {
+      text-decoration: none;
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 125%;
+      color: #292f36;
+    }
+  }
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  width: $widthSite;
+  height: 758px;
+  margin-top: 57px;
+  background-image: url(./img/Photo_1.png);
+  border-radius: $borderRadius;
+
+  &__heading {
+    width: 434px;
+    height: 162px;
+    margin-left: 52px;
+    margin-top: 208px;
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 125%;
+    color: $headingTextColor;
+  }
+
+  &__text {
+    width: 433px;
+    height: 66px;
+    margin-left: 52px;
+    margin-top: 18px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    color: $textColor;
+  }
+
+  &__button {
+    width: 220.14px;
+    height: 75px;
+    margin-left: 52px;
+    margin-top: 21px;
+    background: #292f36;
+    box-shadow: 0px 10px 20px rgba(192, 192, 192, 0.35);
+    border-radius: 18px;
+
+    &__text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &__text span {
+      color: $backgroundColorSite;
+    }
+  }
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+    width: 451px;
+    height: 63px;
+    margin-top: 96px;
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 125%;
+    color: $headingTextColor;
+  }
+
+  &__text {
+    width: 737px;
+    height: 66px;
+    margin-top: 8px;
+    text-align: center;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    color: $textColor;
+  }
+
+  &__content {
+    width: $widthSite;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 37px;
+
+    &__item {
+      width: 525px;
+      margin-top: 56px;
+
+      &__img {
+        width: 525px;
+        height: 548px;
+      }
+
+      &__lowerBlock {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 28px;
+
+        &__left {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      &__heading {
+        width: 184px;
+        height: 31px;
+        font-family: "DM Serif Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 125%;
+        color: $headingTextColor;
+      }
+
+      &__text {
+        width: 217px;
+        height: 27px;
+        margin-bottom: 4px;
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150%;
+        color: $textColor;
+      }
+    }
+  }
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 96px;
+  background-color: $backgroundColorCounter;
+  height: 457px;
+
+  &__tablo {
+    display: flex;
+    justify-content: space-around;
+    width: 1082px;
+    height: 155px;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      text-align: center;
+      width: 192;
+      height: 155px;
+
+      &__number {
+        font-family: "DM Serif Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 85px;
+        line-height: 125%;
+        color: $numberCounterColor;
+      }
+
+      &__text {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150%;
+        color: $textColor;
+      }
+
+      &__gap {
+        width: 2px;
+        height: 155px;
+        border-left: 1px solid $numberCounterColor;
+      }
+    }
+  }
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: $widthSite;
+  margin-top: 96px;
+
+  &__heading {
+    width: 362px;
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 125%;
+    color: $headingTextColor;
+  }
+
+  &__text {
+    width: 811px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    color: $textColor;
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  &__content {
+    margin-top: 52px;
+    width: $widthSite;
+    display: flex;
+    justify-content: space-between;
+
+    &__item:hover svg {
+      fill: $backgroundColorSite;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 382px;
+      border-radius: $borderRadius;
+      border: $borderArticle;
+
+      &:hover {
+        background-color: #f4f0ec;
+      }
+
+      &:hover circle {
+        fill: $backgroundColorSite;
+      }
+
+      &__img {
+        margin: 21px;
+        border-radius: $borderRadius $borderRadius 0 0;
+
+        &__style {
+          position: absolute;
+          width: 118px;
+          height: 41px;
+          left: 52px;
+          top: 253px;
+          font-family: "Jost";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          color: $textColor;
+          background-color: $backgroundColorSite;
+          text-align: center;
+          line-height: 41px;
+
+          filter: drop-shadow(0px 10px 30px rgba(255, 255, 255, 0.25));
+          border-radius: 8px 8px 8px 0;
+        }
+      }
+
+      &__heading {
+        margin-left: 21px;
+        width: 305px;
+        font-family: "DM Serif Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 125%;
+        color: $headingTextColor;
+      }
+
+      &__lowerBlock {
+        margin-top: 30px;
+        margin-bottom: 38px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__text {
+          margin-left: 21px;
+          font-family: "Jost";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          color: $textColor;
+        }
+
+        &__link {
+          margin-right: 21px;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  margin-top: 96px;
+  display: flex;
+  justify-content: space-between;
+
+  &__left {
+    width: 393px;
+
+    &__text {
+      margin-top: 18px;
+      width: 393px;
+      height: 66px;
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 150%;
+      letter-spacing: 0.01em;
+      color: $textColor;
+    }
+
+    &__icons {
+      margin-top: 31px;
+      display: flex;
+      gap: 54px;
+    }
+  }
+
+  &__center {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 152px;
+
+    &__heading {
+      font-family: "DM Serif Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 125%;
+      color: $headingTextColor;
+    }
+
+    &__nav {
+      margin-top: 9px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 72px;
+      height: 198px;
+
+      &__link {
+        text-decoration: none;
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 300%;
+        color: $textColor;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+
+    &__heading {
+      font-family: "DM Serif Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 125%;
+      color: $textColor;
+    }
+
+    &__content {
+      margin-top: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 258px;
+      height: 215px;
+
+      &__item {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150%;
+        color: $textColor;
+      }
+    }
+  }
+}
+
+.blogBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__img {
+    margin-top: 44px;
+    position: relative;
+    width: 1920px;
+    height: 350px;
+  }
+
+  &__nav {
+    position: absolute;
+    top: 314px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 503px;
+    height: 178px;
+    background-color: $backgroundColorSite;
+    border-radius: 37px 37px 0px 0px;
+
+    &__title {
+      padding-top: 41px;
+      font-family: "DM Serif Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 125%;
+      color: $headingTextColor;
+    }
+
+    &__linke {
+      font-family: "Jost";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 150%;
+      color: $textColor;
+    }
+
+    &__linke a {
+      text-decoration: none;
+    }
+  }
+}
+
+.blogLatestPost {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin-top: 200px;
+    margin-left: 360px;
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    color: $headingTextColor;
+  }
+
+  &__content {
+    display: flex;
+    gap: 60px;
+
+    &__img {
+      margin-top: 33px;
+      border-radius: $borderRadius;
+    }
+
+    &__right {
+      width: 470px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &__title {
+        width: 463px;
+        font-family: "DM Serif Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 125%;
+        letter-spacing: 0.02em;
+        color: $headingTextColor;
+        margin-bottom: 22px;
+      }
+
+      &__text {
+        width: 469px;
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        color: $textColor;
+        margin-bottom: 50px;
+      }
+
+      &__date {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        text-transform: capitalize;
+        color: $textColor;
+      }
+
+      &__button svg {
+        width: 52px;
+        height: 52px;
+      }
+
+      &__bottom {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.blogArticles {
+  margin-top: 156px;
+
+  &__heading {
+    width: 362px;
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 125%;
+    color: $headingTextColor;
+  }
+
+  &__content {
+    margin-top: 30px;
+    width: $widthSite;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__pagination {
+      margin-top: 60px;
+      margin-bottom: 200px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 52px;
+        height: 52px;
+        text-decoration: none;
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        text-transform: capitalize;
+        color: $headingTextColor;
+        border: 1px solid #cda274;
+        border-radius: 50%;
+        box-sizing: border-box;
+
+        &__active {
+          background: #f4f0ec;
+          border: none;
+        }
+
+        &:hover {
+          background: #f4f0ec;
+        }
+      }
+    }
+  }
+}
+
+.blogDetailsContent {
+  margin-top: 200px;
+  display: flex;
+  gap: 56px;
+
+  &__leftBlock {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+
+      &__title {
+        width: 684px;
+        font-family: "DM Serif Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 125%;
+        letter-spacing: 0.02em;
+        color: $headingTextColor;
+      }
+
+      &__img {
+        width: 800px;
+        margin-top: 11px;
+        border-radius: $borderRadius;
+      }
+
+      &__dateBlock {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        &__date {
+          font-family: "Jost";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          color: $textColor;
+          letter-spacing: 0.01em;
+          text-transform: capitalize;
+        }
+
+        &__nav {
+          display: flex;
+          gap: 10px;
+        }
+
+        &__nav a {
+          text-decoration: none;
+          font-family: "Jost";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          letter-spacing: 0.01em;
+          text-transform: capitalize;
+          color: $textColor;
+        }
+      }
+
+      &__text {
+        width: 800px;
+        margin-top: 32px;
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        color: $textColor;
+      }
+
+      &__insert {
+        margin-top: 35px;
+        margin-bottom: 27px;
+        width: 800px;
+        height: 267px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #f4f0ec;
+        border-radius: $borderRadius;
+
+        &__heading {
+          width: 345px;
+          font-family: "DM Serif Display";
+          font-style: italic;
+          font-weight: 400;
+          font-size: 25px;
+          line-height: 125%;
+          text-align: center;
+          letter-spacing: 0.02em;
+          color: #cda274;
+        }
+      }
+
+      & ol {
+        list-style-type: none;
+        counter-reset: num;
+        margin: 0 0 0 35px;
+        padding: 15px 0 5px 0;
+        font-size: 18px;
+      }
+
+      & ol li {
+        position: relative;
+        margin: 0;
+        padding: 0;
+      }
+
+      & ol li:before {
+        content: counter(num);
+        counter-increment: num;
+        display: inline-block;
+        position: absolute;
+        top: 5px;
+        left: -40px;
+        width: 15px;
+        color: #ef6780;
+        text-align: right;
+
+        font-family: "DM Serif Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 125%;
+        letter-spacing: 0.02em;
+        color: #cda274;
+      }
+
+      &__img2 {
+        width: 800px;
+        margin-top: 35px;
+        border-radius: $borderRadius;
+      }
+    }
+  }
+
+  &__rightBlock {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      font-family: "DM Serif Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 125%;
+      color: $headingTextColor;
+    }
+
+    &__tags {
+      margin-top: 24px;
+      width: 345px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+
+      &__button {
+        padding: 9px 30px;
+        text-align: center;
+        font-size: 18px;
+        font-family: Jost;
+        line-height: 125%;
+        letter-spacing: 0.36px;
+        color: $headingTextColor;
+        border-radius: 10px;
+        border: none;
+      }
+
+      &__button:hover {
+        background-color: $headingTextColor;
+        color: #ffffff;
+      }
+    }
+  }
+}
